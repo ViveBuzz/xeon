@@ -1,0 +1,22 @@
+{
+  "name": "@xeon/order-helpers",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./*": "./src/*.ts",
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "@xeon/domains": "*"
+  },
+  "peerDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

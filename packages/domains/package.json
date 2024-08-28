@@ -1,0 +1,21 @@
+{
+  "name": "@xeon/domains",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./*": "./src/*.ts",
+    "./entities": "./src/entities/index.ts",
+    "./models": "./src/models/index.ts",
+    "./dals": "./src/dals/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@tsconfig/node20": "20.1.4",
+    "electrodb": "^2.13.1",
+    "nanoid": "5.0.7"
+  }
+}

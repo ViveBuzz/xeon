@@ -1,0 +1,16 @@
+{
+  "name": "@xeon/core-event-service",
+  "version": "0.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.143",
+    "sst": "3.0.66"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.515.0",
+    "@xeon/domains": "*",
+    "valibot": "0.30.0",
+    "zod": "3.23.8"
+  }
+}

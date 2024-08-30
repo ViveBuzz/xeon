@@ -11,8 +11,12 @@ export const api = new sst.aws.ApiGatewayV1('MyApi', {
   },
 });
 
+api.route('GET /events', {
+  handler: './apps/core-event-service/src/apis/get-events-by-store.handler',
+});
+
 api.route('POST /events', {
-  handler: './apps/core-event-service/src/apis/publishEvent.handler',
+  handler: './apps/core-event-service/src/apis/publish-event.handler',
 });
 
 api.deploy();
